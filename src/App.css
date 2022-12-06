@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+* {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: honeydew;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+  padding-bottom: 5px;
+
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  padding-left: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.search>input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  outline: none;
+  width: 100%;
+  transition: all 1s;
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+  text-transform: lowercase;
+  font-size: 1.5vmax;
+}
+
+.about-us {
+
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  font-size: 1.5vmax;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.about-us small {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.about-us a {
+  color: black;
+  padding-left: 3px;
+}
+
+@media (max-width:600px) {
+  .search input {
+    font-size: 18px;
+  }
+
+  .about-us {
+    font-size: 18px;
+    background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgba(204, 254, 152, 1) 0%, rgba(229, 253, 190, 1) 92.4%);
+  }
+
+  .search {
+    font-size: 18px;
+  }
+}
